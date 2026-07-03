@@ -79,4 +79,71 @@ Untracked files:
         ../.viminfo
 
 nothing added to commit but untracked files present (use "git add" to track)
+##################
+
+
+🟩 STEP 2 — Configure Git (Only once)
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
+
+🟩 STEP 3 — Authenticate to GitHub (Two Options)
+You have two ways to authenticate:
+🔹 OPTION A (Recommended): SSH Key Method
+
+1. Generate SSH key on EC2:
+ssh-keygen -t ed25519 -C "manjotkour152@gmail.com"
+Press Enter for all prompts.
+#Your key will be stored here:
+#~/.ssh/id_ed25519
+#~/.ssh/id_ed25519.pub
+
+2. Copy the public key:
+#cat ~/.ssh/id_ed25519.pub
+#Copy the output.
+[ec2-user@ip-172-31-6-33 ~]$ ssh-keygen -t ed25519 -C "manjotkour152@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/ec2-user/.ssh/id_ed25519):
+Created directory '/home/ec2-user/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/ec2-user/.ssh/id_ed25519
+Your public key has been saved in /home/ec2-user/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:pWqaVd0GHyr3uP66NNHfU2LGLXQt5S2Fdja226jHSfw manjotkour152@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|               .o|
+|              o*=|
+|          o ..=oB|
+|         + * + * |
+|        S = =.*.=|
+|       o o = ++=o|
+|      +   + .+.+.|
+|     =   . o. + E|
+|    o    .=+..   |
++----[SHA256]-----+
+[ec2-user@ip-172-31-6-33 ~]$ cat /home/ec2-user/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA9ksb/E9Ns/4goLeyevKVIdkRIgb2d1AGABaG/atMAH manjotkour152@gmail.com
+
+
+
+3. Add it to GitHub:
+GitHub → Profile → Settings → SSH and GPG keys → New SSH Key → paste → Save.
+
+4. Test connection:
+#ssh -T git@github.com
+#If you see:
+#Hi username! You've successfully authenticated.
+#You’re ready to push!
+
+[ec2-user@ip-172-31-6-33 ~]$ ssh -T git@github.com
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi manjotkour152-hub! You've successfully authenticated, but GitHub does not provide shell access.
+[ec2-user@ip-172-31-6-33 ~]$
+**************************************************************************************************************
 
