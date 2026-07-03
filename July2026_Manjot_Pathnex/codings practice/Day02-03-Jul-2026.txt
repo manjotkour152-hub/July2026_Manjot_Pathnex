@@ -147,3 +147,75 @@ Hi manjotkour152-hub! You've successfully authenticated, but GitHub does not pro
 [ec2-user@ip-172-31-6-33 ~]$
 **************************************************************************************************************
 
+
+------------------------------------------------------------------------
+[ec2-user@ip-172-31-6-33 ~]$ git branch
+* master
+[ec2-user@ip-172-31-6-33 ~]$ git branch 03July
+[ec2-user@ip-172-31-6-33 ~]$ git branch
+  03July
+* master
+[ec2-user@ip-172-31-6-33 ~]$ git checkout 03July
+Switched to branch '03July'
+[ec2-user@ip-172-31-6-33 ~]$ git branch
+* 03July
+  master
+
+[ec2-user@ip-172-31-6-33 ~]$ git push -u origin 03July 
+Username for 'https://github.com': Manjot
+Password for 'https://Manjot@github.com': 
+
+[ec2-user@ip-172-31-6-33 ~]$ git push
+fatal: The current branch 03July has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin 03July
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+[ec2-user@ip-172-31-6-33 ~]$ 
+
+[ec2-user@ip-172-31-6-33 ~]$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/manjotkour152-hub/July2026_Manjot_Pathnex.git'
+[ec2-user@ip-172-31-6-33 ~]$ git push --set-upstream origin 03July
+Username for 'https://github.com': Manjot
+Password for 'https://Manjot@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/manjotkour152-hub/July2026_Manjot_Pathnex.git/'
+
+***********************************
+Solution:
+
+git remote -v
+git remote set-url origin git@github.com:manjotkour152-hub/July2026_Manjot_Pathnex.git
+git push -u origin 02_july
+
+---------------------------------------------
+
+[ec2-user@ip-172-31-6-33 ~]$ git remote -v
+origin  git@github.com:manjotkour152-hub/July2026_Manjot_Pathnex.git (fetch)
+origin  git@github.com:manjotkour152-hub/July2026_Manjot_Pathnex.git (push)
+[ec2-user@ip-172-31-6-33 ~]$ git remote set-url origin git@github.com:manjotkour152-hub/July2026_Manjot_Pathnex.git
+[ec2-user@ip-172-31-6-33 ~]$ git push --set-upstream origin 03July
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (19/19), 4.85 KiB | 2.42 MiB/s, done.
+Total 19 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), done.
+To github.com:manjotkour152-hub/July2026_Manjot_Pathnex.git
+ * [new branch]      03July -> 03July
+branch '03July' set up to track 'origin/03July'.
+[ec2-user@ip-172-31-6-33 ~]$ 
+
+
+
+
+
+
+
+
+
