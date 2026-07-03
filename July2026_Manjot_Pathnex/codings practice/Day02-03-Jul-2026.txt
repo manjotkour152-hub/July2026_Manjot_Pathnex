@@ -1,11 +1,7 @@
-###################################################################################
-[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ ll
+[ec2-user@ip-172-31-6-33 ~]$ ls -lrth
 total 0
-drwxr-xr-x. 2 ec2-user ec2-user 35 Jul  3 10:11 'codings practice'
-drwxr-xr-x. 2 ec2-user ec2-user 64 Jul  3 10:11  timings
-[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ git status
-fatal: not a git repository (or any of the parent directories): .git
-[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ git init
+drwxr-xr-x. 4 ec2-user ec2-user 45 Jul  3 10:23 July2026_Manjot_Pathnex
+[ec2-user@ip-172-31-6-33 ~]$ git init
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
 hint: of your new repositories, which will suppress this warning, call:
@@ -18,20 +14,17 @@ hint:
 hint:   git branch -m <name>
 hint:
 hint: Disable this message with "git config set advice.defaultBranchName false"
-Initialized empty Git repository in /home/ec2-user/July2026_Manjot_Pathnex/.git/
-
-[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ git status
-On branch master
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        codings practice/
-        timings/
-
-nothing added to commit but untracked files present (use "git add" to track)
-
+Initialized empty Git repository in /home/ec2-user/.git/
+[ec2-user@ip-172-31-6-33 ~]$ ls -lrth
+total 0
+drwxr-xr-x. 4 ec2-user ec2-user 45 Jul  3 10:23 July2026_Manjot_Pathnex
+[ec2-user@ip-172-31-6-33 ~]$ cd July2026_Manjot_Pathnex/
+[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ ls -larth
+total 0
+drwxr-xr-x. 2 ec2-user ec2-user  64 Jul  3 10:11  timings
+drwxr-xr-x. 2 ec2-user ec2-user  64 Jul  3 10:15 'codings practice'
+drwxr-xr-x. 4 ec2-user ec2-user  45 Jul  3 10:23  .
+drwx------. 5 ec2-user ec2-user 133 Jul  3 10:24  ..
 [ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ git add .
 [ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ git status
 On branch master
@@ -40,9 +33,50 @@ No commits yet
 
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
+        new file:   codings practice/Day01-02-Jul-2026.txt
         new file:   codings practice/Day02-03-Jul-2026.txt
         new file:   timings/Day01-02-Jul-2026.txt
         new file:   timings/Day02-03-Jul-2026.txt
 
-[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.bash_logout
+        ../.bash_profile
+        ../.bashrc
+        ../.ssh/
+        ../.viminfo
+
+[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ git commit -m "first commit"
+[master (root-commit) 09fd6f2] first commit
+ Committer: EC2 Default User <ec2-user@ip-172-31-6-33.ap-south-1.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 148 insertions(+)
+ create mode 100644 July2026_Manjot_Pathnex/codings practice/Day01-02-Jul-2026.txt
+ create mode 100644 July2026_Manjot_Pathnex/codings practice/Day02-03-Jul-2026.txt
+ create mode 100644 July2026_Manjot_Pathnex/timings/Day01-02-Jul-2026.txt
+ create mode 100644 July2026_Manjot_Pathnex/timings/Day02-03-Jul-2026.txt
+[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ git config --global --edit
+[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.bash_logout
+        ../.bash_profile
+        ../.bashrc
+        ../.gitconfig
+        ../.ssh/
+        ../.viminfo
+
+nothing added to commit but untracked files present (use "git add" to track)
 
