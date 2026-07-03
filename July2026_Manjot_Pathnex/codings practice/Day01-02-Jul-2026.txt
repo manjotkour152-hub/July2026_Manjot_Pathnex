@@ -1,0 +1,31 @@
+Git = Your notebook
+
+Git keeps track of every change you make to your code. If you make a mistake, Git lets you go back to an earlier version.
+
+GitHub = Your online notebook
+
+GitHub is a website where you store your Git projects. It lets you back up your code and work with other people.
+
+Example
+
+Imagine you're writing a school project.
+
+Git is like pressing Save after every important change and keeping all old versions.
+GitHub is like uploading your project to Google Drive, where your friends can also view and help edit it.
+Simple analogy
+ Git = Keeps the history of your work.
+ GitHub = Stores your work online and makes teamwork easy.
+
+One-line difference
+ Git = A tool to track changes in your code.
+ GitHub = A website to store and share Git projects.
+
+        Git	                                   GitHub
+      -------                                    ----------
+A version control system	     A cloud platform that hosts Git repositories
+Installed on your computer	     Accessed through a website or app
+Tracks changes in your code	     Stores your Git repositories online
+Works without the internet	     Usually requires the internet for collaboration
+Used for version control	     Used for collaboration, backup, pull requests, and code sharing
+
+

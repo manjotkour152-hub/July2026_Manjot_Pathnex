@@ -1,0 +1,50 @@
+# Installation of Git & GitHub to EC2 Integration:
+
+#Check whether git installed on your local machine/ec2:
+
+[ec2-user@ip-172-31-6-33 ~]$ git --version
+-bash: git: command not found
+[ec2-user@ip-172-31-6-33 ~]$ yum install git -y
+Error: This command has to be run with superuser privileges (under the root user on most systems).
+
+#Install GIT 
+
+[ec2-user@ip-172-31-6-33 ~]$ sudo yum install git -y
+********************************************
+Installed:
+  git-2.50.1-1.amzn2023.0.1.x86_64                               git-core-2.50.1-1.amzn2023.0.1.x86_64
+  git-core-doc-2.50.1-1.amzn2023.0.1.noarch                      perl-Error-1:0.17030-2.amzn2023.0.1.noarch
+  perl-File-Find-1.37-477.amzn2023.0.9.noarch                    perl-Git-2.50.1-1.amzn2023.0.1.noarch
+  perl-TermReadKey-2.38-9.amzn2023.0.3.x86_64                    perl-lib-0.65-477.amzn2023.0.9.x86_64
+
+Complete!
+********************************************
+
+#mkdir Batch_Name_Pathnex
+[ec2-user@ip-172-31-6-33 ~]$ mkdir -p July2026_Manjot_Pathnex
+
+#cd Batch_Name_Pathnex
+[ec2-user@ip-172-31-6-33 ~]$ cd July2026_Manjot_Pathnex/
+[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ ll
+total 0
+
+#Create two folders
+[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ mkdir timings
+[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ mkdir "codings practice"
+
+#Check the status of GIT
+[ec2-user@ip-172-31-6-33 July2026_Manjot_Pathnex]$ git --version
+git version 2.50.1
+
+
+
+
+
+
+
+
+
+
+
+
+

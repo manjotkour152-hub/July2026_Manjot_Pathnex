@@ -1,0 +1,19 @@
+#  Push to GitHub from Local
+
+# Step 1 — Initialize Git
+git init
+
+# Step 2 — Add the remote GitHub repo
+# Copy your GitHub repo URL (HTTPS) and run:
+git remote add origin https://github.com/your-username/Batch_Name_Pathnex.git
+
+# Step 3 — Add all files
+git add .
+
+# Step 4 — Commit
+git commit -m "Added Day02 files in timings and coding practice"
+
+# Step 5 — Push
+git branch -M main
+git push -u origin main
+# Congratulations — everything is uploaded to GitHub!
